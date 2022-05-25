@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    list-style-type: none;
+}
+
+html, body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #242424;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#container{
+    box-shadow: -20px 20px 30px rgba(0,0,0,0.7);
+}
+
+#container #campo{
+    text-align: right;
+    width: 500px;
+    height: 80px;
+    font-size: 30px;
+    border: none;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+#container #espaço-interno{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-numero, .btn-apagar, .btn-limpar, .btn-igual{
+    cursor: pointer;
+    width: 25%;
+    height: 70px;
+    background-color: rgb(183, 183, 183);
+    border-bottom: 1px solid black;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+}
+
+.btn-igual{
+    background-color: orange;
+    border-bottom-right-radius: 10px;
+}
+
+.ponto{
+    border-bottom-left-radius: 10px;
+}
+
+.btn-numero:hover, .btn-apagar:hover, .btn-limpar:hover, .btn-igual:hover{
+    background-color: #a1a1a1;
+}
+
+.btn-numero:active, .btn-apagar:active, .btn-limpar:active, .btn-active{
+    background-color: #686868;
+}
+
+.btn-igual:active{
+    background-color: rgb(211, 137, 0);
+}   
+
+.borda1{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.borda2{
+    border-right: 1px solid black;
+}
+
+.historico{
+    background-color: #a1a1a1;
+    border: 3px solid black;
+    padding: 8px;
+    width: 430px;
+    height: 430px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+
+.historico .conteudo{
+    overflow: hidden;
+    height: 360px;
+}
+
+.historico h1{
+    font-family: 'Roboto Mono', monospace;;
+    font-size: 30px;
+}
+
+.historico p, .historico button, #container #botao-historico button{
+    font-family: 'Roboto Mono', monospace;;
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+#container #botao-historico button{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
+
+#container #botao-historico button:active{
+    background: linear-gradient(to left, #868f96 0%, #596164 100%);
+}
+
+.historico button{
+    height: 30px;
+    width: 100px;
+}
+
+#controlador{
+    display: none;
+}
+

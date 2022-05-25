@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="imagem/calculadora.png">
+        <title> Calculadora </title>
+    </head>
+
+    <body>
+
+        <aside class="historico" id="controlador">
+            <div class="conteudo">
+                <h1> Histórico: </h1>
+            </div>
+            <div>
+                <button type="button" class="limpar-historico"> Limpar </button>
+            </div>
+        </aside>
+    
+        <div id="container">
+            <div id="botao-historico">
+                <button type="button"> Histórico </button>
+            </div>
+            <input type="text" id="campo" disabled> 
+            <div id="espaço-interno"> 
+                <div class="btn-limpar">  C </div>
+                <div class="btn-numero borda1">  (  </div>
+                <div class="btn-numero borda2"> ) </div>
+                <div class="btn-numero"> ÷ </div>
+                <div class="btn-numero"> 7 </div>
+                <div class="btn-numero borda1"> 8 </div>
+                <div class="btn-numero borda2"> 9 </div>
+                <div class="btn-numero"> × </div>
+                <div class="btn-numero"> 4 </div>
+                <div class="btn-numero borda1"> 5 </div>
+                <div class="btn-numero borda2"> 6 </div>
+                <div class="btn-numero"> + </div>
+                <div class="btn-numero"> 1 </div>
+                <div class="btn-numero borda1"> 2 </div>
+                <div class="btn-numero borda2"> 3 </div>
+                <div class="btn-numero"> - </div>
+                <div class="btn-numero ponto"> . </div>
+                <div class="btn-numero borda1"> 0 </div>
+                <div class="btn-apagar borda2"> ← </div>
+                <div class="btn-igual"> = </div>
+            </div>
+        </div>
+
+        <script src="calculadora.js"></script>
+    </body>
+</html>
